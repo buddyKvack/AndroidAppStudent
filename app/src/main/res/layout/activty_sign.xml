@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/design_background">
+    <RelativeLayout
+        android:id="@+id/Relative_sign"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        app:layout_constraintBottom_toTopOf="@+id/WelcomeText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <View
+            android:id="@+id/blue_bg_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/blue_bg1">
+        </View>
+
+        <ImageView
+            android:id="@+id/logo_sign"
+            android:layout_width="285dp"
+            android:layout_height="134dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="59dp"
+            android:src="@drawable/logo_wksu"></ImageView>
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/EmailAddress"
+        android:layout_width="328dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="36dp"
+        android:ellipsize="start"
+        android:ems="1"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Relative_sign" />
+
+    <EditText
+        android:id="@+id/TextPassword"
+        android:layout_width="326dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/EmailAddress"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/EmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/EmailAddress"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/SigButton"
+        android:layout_width="169dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button_desgn"
+        android:text="Войти"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/TextPassword"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="@+id/TextPassword"
+        app:layout_constraintTop_toBottomOf="@+id/TextPassword"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/SignOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/SigButton"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="@+id/SigButton"
+        app:layout_constraintTop_toBottomOf="@+id/SigButton"
+        app:layout_constraintVertical_bias="0.833" />
+</androidx.constraintlayout.widget.ConstraintLayout>

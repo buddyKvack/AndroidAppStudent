@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/message_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginStart="6dp"
+        android:textColor="#02031a"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
+
+    <com.daasuu.bl.BubbleLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/message_user"
+        android:layout_alignParentStart="true"
+        android:padding="9dp"
+        android:textColor="#0c0d0c"
+        android:textSize="18dp"
+        app:bl_arrowDirection="left"
+        app:bl_arrowHeight="6dp"
+        app:bl_bubbleColor="#34ebeb"
+        app:bl_cornersRadius="17dp">
+    <TextView
+        android:id="@+id/message_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="4dp"
+        android:textSize="19dp"
+        android:textColor="#02031a"/>
+
+    </com.daasuu.bl.BubbleLayout>
+
+
+
+</RelativeLayout>

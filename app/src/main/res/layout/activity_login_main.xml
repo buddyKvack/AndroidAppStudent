@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLogin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginMain">
+
+    <RelativeLayout
+        android:id="@+id/Relative"
+        android:layout_width="match_parent"
+        android:layout_height="188dp"
+        app:layout_constraintBottom_toTopOf="@+id/WelcomeText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <View
+            android:id="@+id/blue_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/blue_bg1"></View>
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="235dp"
+            android:layout_height="96dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/logo_wksu"></ImageView>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/ButtonRegister"
+        android:layout_width="175dp"
+        android:layout_height="42dp"
+        android:background="@drawable/button_desgn"
+        android:fontFamily="@font/acme"
+        android:text="Зарегистрироваться"
+        android:textColor="#070705"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditName"
+        app:layout_constraintVertical_bias="0.15" />
+    <Button
+        android:id="@+id/NextMain"
+        android:layout_width="142dp"
+        android:layout_height="39dp"
+        android:text=" NextMain"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.992"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.917" />
+
+    <Button
+        android:id="@+id/signIn"
+        android:layout_width="142dp"
+        android:layout_height="39dp"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.991"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.992" />
+
+    <EditText
+        android:id="@+id/EditEmailAddress"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/background_text"
+        android:drawableStart="@drawable/ic_mail"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="11dp"
+        android:padding="10dp"
+        android:drawablePadding="5dp"
+        android:paddingEnd="15dp"
+        android:textCursorDrawable="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WelcomeText" />
+
+    <EditText
+        android:id="@+id/EditPassword"
+        android:layout_width="300dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/background_text"
+        android:drawablePadding="5dp"
+        android:drawableStart="@drawable/ic_pass"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="9dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/EditEmailAddress"
+        app:layout_constraintStart_toStartOf="@+id/EditEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/EditEmailAddress" />
+
+    <EditText
+        android:id="@+id/EditName"
+        android:layout_width="300dp"
+        android:layout_height="47dp"
+        android:paddingLeft="15dp"
+        android:paddingEnd="15dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/background_text"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/EditPassword"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/EditPassword"
+        app:layout_constraintTop_toBottomOf="@+id/EditPassword" />
+
+    <Button
+        android:id="@+id/Sign_MainLogin"
+        android:layout_width="100dp"
+        android:layout_height="27dp"
+        android:background="@drawable/button_desgn"
+        android:text="Войти"
+        android:fontFamily="@font/acme"
+        android:textColor="#050404"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ButtonRegister"
+        app:layout_constraintVertical_bias="0.255" />
+
+    <TextView
+        android:id="@+id/WelcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:clickable="true"
+        android:text="Регистрация"
+        android:textColor="#020425"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Relative"></TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
